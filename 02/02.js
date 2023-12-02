@@ -1,14 +1,12 @@
 function manufacture(gifts, materials) {
-    materials = new Set(materials.split(''));
-    const impossibleGifts = new Set();
-    for (const gift of gifts) {
-        for (let i = 0; i < gift.length; i++) {
-            if (!materials.has(gift[i])) {
-                impossibleGifts.add(gift);
-            }
+    const materialsSet = new Set(materials.split(''));
+    return gifts.filter(gift => {
+        const giftSet = new Set(gift);
+        for (char of giftSet) {
+            if (!materialsSet.has(char)) return false;
         }
-    }
-    return gifts.filter(gift => !impossibleGifts.has(gift));
+        return true;
+    });
 }
 
 const gifts = ['tren', 'oso', 'pelota']

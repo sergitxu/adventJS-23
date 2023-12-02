@@ -1,5 +1,5 @@
 function manufacture(gifts, materials) {
-    const materialsSet = new Set(materials.split(''));
+    const materialsSet = new Set(materials);
     return gifts.filter(gift => {
         const giftSet = new Set(gift);
         for (char of giftSet) {

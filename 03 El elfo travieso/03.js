@@ -1,7 +1,7 @@
 function findNaughtyStep(original, modified) {
     for (let i = 0; i <= original.length; i++) {
         if (original[i] !== modified[i]) {
-            if (original[i] === modified[i + 1]) {
+            if (modified.length > original.length) {
                 return modified[i];
             }
             return original[i];

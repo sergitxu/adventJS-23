@@ -2,6 +2,7 @@ function findFirstRepeated(gifts) {
     const toCompare = new Set();
     for (const gift of gifts) {
         if (toCompare.has(gift)) {
+            // Si el set para comparar tiene el juguete, es el primer repetido
             return gift;
         }
         toCompare.add(gift);

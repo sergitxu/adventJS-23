@@ -12,7 +12,7 @@ challenges proposed by @midudev
 | 3 | [Reto #3: 😏 El elfo travieso](https://adventjs.dev/es/challenges/2023/3) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/03%20El%20elfo%20travieso/03.js) | 360 |
 | 4 | [Reto #4: 😵‍💫 Dale la vuelta a los paréntesis](https://adventjs.dev/es/challenges/2023/4) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/04%20Dale%20vuelta%20a%20los%20parentesis/04.js) | 220 |
 | 5 | [Reto #5: 🛷 El CyberTruck de Santa](https://adventjs.dev/es/challenges/2023/5) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/05%20El%20Cybertruck%20de%20Santa/05.js) | 100 |
-| 6 | [Reto #6: 🦌 Los renos a prueba](https://adventjs.dev/es/challenges/2023/6) | 🟢 |  |  |
+| 6 | [Reto #6: 🦌 Los renos a prueba](https://adventjs.dev/es/challenges/2023/6) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/06%20Los%20renos%20a%20prueba/06.js) | 370 |
 | 7 |  |  |  |  |
 | 8 |  |  |  |  |
 | 9 |  |  |  |  |

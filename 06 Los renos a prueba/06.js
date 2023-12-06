@@ -11,6 +11,11 @@ function maxDistance(movements) {
         }
     };
     return Math.abs(maxNumber) + extra;
+    // (movements.match(/\>/g) || []).length;
+    // let right = (movements.match(/\>/g) || []).length;
+    // let left = (movements.match(/\</g) || []).length;
+    // let extra = (movements.match(/\*/g) || []).length;
+    // return Math.abs(right - left) + extra;
 }
 
 

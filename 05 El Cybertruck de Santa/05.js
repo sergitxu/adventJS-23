@@ -11,7 +11,9 @@ function cyberReindeer(road, time) {
         nextStep = road[cyberPosition + 1];
         if (road[cyberPosition + 1] !== '|') {
             road = road.replace(road[cyberPosition], backStep);
-            road = road.slice(0, cyberPosition + 1) + 'S' + road.slice(cyberPosition + 2);
+            let roadPre = road.slice(0, cyberPosition + 1);
+            let roadPost = road.slice(cyberPosition + 2);
+            road = roadPre + 'S' + roadPost;
             cyberPosition++;
             backStep = nextStep;
         }

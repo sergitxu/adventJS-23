@@ -1,7 +1,7 @@
 function maxDistance(movements) {
     let maxNumber = 0;
     let extra = 0;
-    for (let movement of movements) {
+    for (const movement of movements) {
         if (movement === '>') {
             maxNumber++;
         } else if (movement === '<') {

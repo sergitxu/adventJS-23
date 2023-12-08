@@ -15,12 +15,14 @@ function organizeGifts(gifts) {
 
     for (const gift of giftsMap) {
         let packedGift = '';
-        for (let i = 0; i < Math.floor(gift[1] / 50); i++) {
+        let package50 = Math.floor(gift[1] / 50);
+        for (let i = 0; i < package50; i++) {
             packedGift += `[${gift[0]}]`;
         }
         let remainder = gift[1] % 50;
+        let package10 = Math.floor(remainder / 10)
         if (remainder) {
-            for (let i = 0; i < Math.floor(remainder / 10); i++) {
+            for (let i = 0; i < package10; i++) {
                 packedGift += `{${gift[0]}}`;
             }
         }

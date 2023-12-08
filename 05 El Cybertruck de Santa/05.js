@@ -9,7 +9,7 @@ function cyberReindeer(road, time) {
             road = road.replaceAll('|', '*');
         }
         nextStep = road[cyberPosition + 1];
-        if (road[cyberPosition + 1] !== '|') {
+        if (nextStep !== '|') {
             road = road.replace(road[cyberPosition], backStep);
             let roadPre = road.slice(0, cyberPosition + 1);
             let roadPost = road.slice(cyberPosition + 2);

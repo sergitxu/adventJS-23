@@ -15,19 +15,19 @@ challenges proposed by @midudev
 | 6 | [Reto #6: 🦌 Los renos a prueba](https://adventjs.dev/es/challenges/2023/6) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/06%20Los%20renos%20a%20prueba/06.js) | 370 |
 | 7 | [Reto #7: 📦 Las cajas en 3D](https://adventjs.dev/es/challenges/2023/7) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/07%20cajas%20en%203D/07.js) | 260 |
 | 8 | [Reto #8: 🏬 Ordenando el almacén](https://adventjs.dev/es/challenges/2023/8) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/08%20Ordenando%20el%20almacen/08.js) | 220 |
-| 9 |  |  |  |  |
-| 10 |  |  |  |  |
-| 11 |  |  |  |  |
-| 12 |  |  |  |  |
-| 13 |  |  |  |  |
-| 14 |  |  |  |  |
-| 15 |  |  |  |  |
-| 16 |  |  |  |  |
-| 17 |  |  |  |  |
-| 18 |  |  |  |  |
-| 19 |  |  |  |  |
-| 20 |  |  |  |  |
-| 21 |  |  |  |  |
-| 22 |  |  |  |  |
-| 23 |  |  |  |  |
-| 24 |  |  |  |  |
+| 9 | [Reto #9: ](https://2022.adventjs.dev/es/challenges/2022/9) |  | [Mi solución]() |  |
+| 10 | [Reto #10: ](https://2022.adventjs.dev/es/challenges/2022/10) |  | [Mi solución]() |  |
+| 11 | [Reto #11: ](https://2022.adventjs.dev/es/challenges/2022/11) |  | [Mi solución]() |  |
+| 12 | [Reto #12: ](https://2022.adventjs.dev/es/challenges/2022/12) |  | [Mi solución]() |  |
+| 13 | [Reto #13: ](https://2022.adventjs.dev/es/challenges/2022/13) |  | [Mi solución]() |  |
+| 14 | [Reto #14: ](https://2022.adventjs.dev/es/challenges/2022/14) |  | [Mi solución]() |  |
+| 15 | [Reto #15: ](https://2022.adventjs.dev/es/challenges/2022/15) |  | [Mi solución]() |  |
+| 16 | [Reto #16: ](https://2022.adventjs.dev/es/challenges/2022/16) |  | [Mi solución]() |  |
+| 17 | [Reto #17: ](https://2022.adventjs.dev/es/challenges/2022/17) |  | [Mi solución]() |  |
+| 18 | [Reto #18: ](https://2022.adventjs.dev/es/challenges/2022/18) |  | [Mi solución]() |  |
+| 19 | [Reto #19: ](https://2022.adventjs.dev/es/challenges/2022/19) |  | [Mi solución]() |  |
+| 20 | [Reto #20: ](https://2022.adventjs.dev/es/challenges/2022/20) |  | [Mi solución]() |  |
+| 21 | [Reto #21: ](https://2022.adventjs.dev/es/challenges/2022/21) |  | [Mi solución]() |  |
+| 22 | [Reto #22: ](https://2022.adventjs.dev/es/challenges/2022/22) |  | [Mi solución]() |  |
+| 23 | [Reto #23: ](https://2022.adventjs.dev/es/challenges/2022/23) |  | [Mi solución]() |  |
+| 24 | [Reto #24: ](https://2022.adventjs.dev/es/challenges/2022/24) |  | [Mi solución]() |  |

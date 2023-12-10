@@ -15,7 +15,7 @@ challenges proposed by @midudev
 | 6 | [Reto #6: 🦌 Los renos a prueba](https://adventjs.dev/es/challenges/2023/6) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/06%20Los%20renos%20a%20prueba/06.js) | 370 |
 | 7 | [Reto #7: 📦 Las cajas en 3D](https://adventjs.dev/es/challenges/2023/7) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/07%20cajas%20en%203D/07.js) | 260 |
 | 8 | [Reto #8: 🏬 Ordenando el almacén](https://adventjs.dev/es/challenges/2023/8) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/08%20Ordenando%20el%20almacen/08.js) | 220 |
-| 9 | [Reto #9: ](https://2022.adventjs.dev/es/challenges/2022/9) |  | [Mi solución]() |  |
+| 9 | [Reto #9: 🚦 Alterna las luces ](https://2022.adventjs.dev/es/challenges/2022/9) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/09%20Alterna%20las%20luces/09.js) | 320 |
 | 10 | [Reto #10: ](https://2022.adventjs.dev/es/challenges/2022/10) |  | [Mi solución]() |  |
 | 11 | [Reto #11: ](https://2022.adventjs.dev/es/challenges/2022/11) |  | [Mi solución]() |  |
 | 12 | [Reto #12: ](https://2022.adventjs.dev/es/challenges/2022/12) |  | [Mi solución]() |  |

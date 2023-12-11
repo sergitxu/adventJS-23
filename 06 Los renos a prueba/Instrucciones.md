@@ -1,3 +1,5 @@
+## Reto #6: 🦌 Los renos a prueba
+
 Los elfos están catalogando los renos de Santa 🦌 según la distancia que pueden recorrer.
 
 Para ello tienen una cadena de texto movements donde cada caracter representa la dirección del movimiento del reno:

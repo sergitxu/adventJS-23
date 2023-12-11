@@ -1,3 +1,5 @@
+## Reto #5: 🛷 El CyberTruck de Santa
+
 Santa 🎅 está probando su nuevo trineo eléctrico, el  <em>CyberReindeer</em>, en una carretera del Polo Norte. La carretera se representa con una cadena de caracteres, donde:
 
 **. = Carretera**

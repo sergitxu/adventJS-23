@@ -18,7 +18,7 @@ challenges proposed by @midudev
 | 9 | [Reto #9: 🚦 Alterna las luces](https://2022.adventjs.dev/es/challenges/2022/9) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/09%20Alterna%20las%20luces/09.js) | 320 |
 | 10 | [Reto #10: 🎄 Crea tu propio árbol de navidad](https://2022.adventjs.dev/es/challenges/2022/10) |🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/10%20Crea%20tu%20propio%20arbol%20de%20Navidad/10.js) | 270 |
 | 11 | [Reto #11: 📖 Los elfos estudiosos](https://2022.adventjs.dev/es/challenges/2022/11) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/11%20Los%20elfos%20estudiosos/11.js) | 30 |
-| 12 | [Reto #12: ](https://2022.adventjs.dev/es/challenges/2022/12) |  | [Mi solución]() |  |
+| 12 | [Reto #12: 📸 ¿Es una copia válida? ](https://2022.adventjs.dev/es/challenges/2022/12) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/12%20copia%20valida/12.js) | 25 |
 | 13 | [Reto #13: ](https://2022.adventjs.dev/es/challenges/2022/13) |  | [Mi solución]() |  |
 | 14 | [Reto #14: ](https://2022.adventjs.dev/es/challenges/2022/14) |  | [Mi solución]() |  |
 | 15 | [Reto #15: ](https://2022.adventjs.dev/es/challenges/2022/15) |  | [Mi solución]() |  |

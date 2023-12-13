@@ -14,7 +14,33 @@ function findNaughtyStep(original, modified) {
     return '';
 }
 
-console.log(`Expected 'e': ${findNaughtyStep('abcd', 'abcde')}`); // 'e'
-console.log(`Expected '': ${findNaughtyStep('abcde', 'abcde')}`); // ''
-console.log(`Expected 'f': ${findNaughtyStep('stepfor', 'stepor')}`); // 'f'
-console.log(`Expected 'o': ${findNaughtyStep('xxxx', 'xxoxx')}`); // 'o'
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.deepStrictEqual(findNaughtyStep('abcd', 'abcde'), 'e');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(findNaughtyStep('abcde', 'abcde'), '');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(findNaughtyStep('stepfor', 'stepor'), 'f');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(findNaughtyStep('xxxx', 'xxoxx'), 'o');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

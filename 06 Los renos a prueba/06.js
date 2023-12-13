@@ -18,15 +18,26 @@ function maxDistance(movements) {
     // return Math.abs(right - left) + extra;
 }
 
+// TESTS
+const assert = require('assert');
 
-const movements = '>>*<'
-const result = maxDistance(movements)
-console.log(`Expected: 2: ${result}`) // -> 2
+try {
+    assert.deepStrictEqual(maxDistance('>>*<'), 2);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
-const movements2 = '<<<>'
-const result2 = maxDistance(movements2)
-console.log(`Expected: 2: ${result2}`) // -> 2
+try {
+    assert.deepStrictEqual(maxDistance('<<<>'), 2);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
-const movements3 = '>***>'
-const result3 = maxDistance(movements3)
-console.log(`Expected: 5: ${result3}`) // -> 5
+try {
+    assert.deepStrictEqual(maxDistance('>***>'), 5);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

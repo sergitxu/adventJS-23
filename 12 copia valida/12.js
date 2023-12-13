@@ -24,23 +24,84 @@ function checkIsValidCopy(original, copy) {
             if (letter === ' ' && copyLetter !== ' ') {
                 return false;
             }
+            return checkSpecialCharacter(letter, copyLetter);
         } else if (letter !== copyLetter) {
             return false;
         }
     }
+    /* 
+    Without this function the code still works 
+    because there are no examples with '#+:.' characters 
+    in the original message
+    */
+    function checkSpecialCharacter(original, copy) {
+        let reference = '#+:. ';
+        let index = reference.indexOf(original);
+        let possibleRef = reference.substring(index, reference.length);
+        const possibleSpecialCharacters = new RegExp(`[${possibleRef}]`);
+        if (possibleRef && copy.match(possibleSpecialCharacters)) {
+            return true;
+        }
+        return false;
+    }
     return true;
 }
-console.log(`Expected: false - ${checkIsValidCopy('Santa Claus', 's#+:.#c:. s')}`);
-console.log(`Expected: true FALSE - ${checkIsValidCopy('3: #egalos', '3+ .+:# #:')}`);
-console.log(`Expected: true - ${checkIsValidCopy('Santa Claus', '###:. c:+##')}`);
-console.log(`Expected: false - ${checkIsValidCopy('SAOPO]', 's')}`);
-console.log(`Expected: true - ${checkIsValidCopy(
-    'Santa Claus is coming',
-    'sa#ta cl#us is comin#'
-)}`);
-console.log(`Expected: false - ${checkIsValidCopy(
-    'Santa Claus is coming',
-    'p#nt: cla#s #s c+min#'
-)}`);
-console.log(`Expected: true - ${checkIsValidCopy('Santa Claus', 's#+:. c:. s')}`);
-console.log(`Expected: false - ${checkIsValidCopy('Santa Claus', 's#+:.#c:. s')}`);
+
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus', 's#+:.#c:. s'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('3: #egalos', '3+ .+:# #:'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus', '###:. c:+##'), true);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('SAOPO]', 's'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus is coming', 'sa#ta cl#us is comin#'), true);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus is coming', 'p#nt: cla#s #s c+min#'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus', 's#+:. c:. s'), true);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('Santa Claus', 's#+:.#c:. s'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

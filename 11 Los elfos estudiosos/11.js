@@ -1,30 +1,73 @@
 function getIndexsForPalindrome(word) {
-    let originalWord = word;
-    let wordReverse = word.split('').reverse().join('');
-    if (word === wordReverse) {
+    function isPalindrome(str) {
+        return str === str.split('').reverse().join('');
+    }
+
+    if (word.length < 3 || isPalindrome(word)) {
         return [];
     }
-    word = originalWord.split('');
-    for (let i = 0; i < word.length; i++) {
-        let pre = word[i];
-        for (let j = i + 1; j < word.length; j++) {
-            word[i] = word[j];
-            word[j] = pre;
-            let wordCompare = word.join('');
-            let wordReversedCompare = wordCompare.split('').reverse().join('');
-            if (wordCompare === wordReversedCompare) {
-                return [i, j];
+
+    for (let i = 0; i < word.length - 1; i++) {
+        for (let j = word.length - 1; j > i; j--) {
+            if (word[i] !== word[j]) {
+                let modifiedWord = word.substring(0, i) + word[j] + word.substring(i + 1, j) + word[i] + word.substring(j + 1);
+                if (isPalindrome(modifiedWord)) {
+                    return [i, j];
+                }
             }
-            word = originalWord.split('');
         }
     }
     return null;
 }
 
-console.log(`Expected: [] - ${getIndexsForPalindrome('anna')}`); // []
-console.log(`Expected: [] - ${getIndexsForPalindrome('aaaaaaaa')}`); // []
-console.log(`Expected: null - ${getIndexsForPalindrome('abac')}`); // null
-console.log(`Expected: null - ${getIndexsForPalindrome('caababa')}`); // null
-console.log(`Expected: [0, 1] - ${getIndexsForPalindrome('abab')}`); // [0, 1]
-console.log(`Expected: [1,3] - ${getIndexsForPalindrome('aaababa')}`); // [1, 3]
-console.log(`Expected: [4,8] - ${getIndexsForPalindrome('rotaratov')}`); // [1, 3]
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('anna'), []);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('aaaaaaaa'), []);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('abac'), null);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('caababa'), null);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('abab'), [0, 1]);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('aaababa'), [1, 3]);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(getIndexsForPalindrome('rotaratov'), [4, 8]);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

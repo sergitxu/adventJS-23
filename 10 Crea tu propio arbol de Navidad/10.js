@@ -20,21 +20,40 @@ function createChristmasTree(ornaments, height) {
 
     return result;
 }
-// Ejemplos de uso:
 
-console.log(createChristmasTree('123', 4));
-`
-    1
-   2 3
-  1 2 3
- 1 2 3 1
-    |
-`
+// TESTS
+const assert = require('assert');
 
-console.log(createChristmasTree('*@o', 3));
-`
-   *
-  @ o
- * @ o
-   |
-`
+try {
+    assert.strictEqual(createChristmasTree('123', 4),
+        '   1\n' +
+        '  2 3\n' +
+        ' 1 2 3\n' +
+        '1 2 3 1\n' +
+        '   |\n'
+    );
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+//    1
+//   2 3
+//  1 2 3
+// 1 2 3 1
+//    |
+
+try {
+    assert.strictEqual(createChristmasTree('*@o', 3),
+        '  *\n' +
+        ' @ o\n' +
+        '* @ o\n' +
+        '  |\n'
+    );
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+//   *
+//  @ o
+// * @ o
+//   |

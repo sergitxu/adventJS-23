@@ -22,21 +22,37 @@ function cyberReindeer(road, time) {
     return roadArray;
 }
 
-const road = 'S..|...|..'
-const time = 10 // unidades de tiempo
-console.log(cyberReindeer(road, time));
-console.log(`
-Expected: 
-[
-    'S..|...|..', // estado inicial
-    '.S.|...|..', // avanza el trineo la carretera
-    '..S|...|..', // avanza el trineo la carretera
-    '..S|...|..', // el trineo para en la barrera
-    '..S|...|..', // el trineo para en la barrera
-    '...S...*..', // se abre la barrera, el trineo avanza
-    '...*S..*..', // avanza el trineo la carretera
-    '...*.S.*..', // avanza el trineo la carretera
-    '...*..S*..', // avanza el trineo la carretera
-    '...*...S..', // avanza por la barrera abierta
-  ]
-`);
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.deepStrictEqual(cyberReindeer('S..|...|..', 10),
+        [
+            'S..|...|..',
+            '.S.|...|..',
+            '..S|...|..',
+            '..S|...|..',
+            '..S|...|..',
+            '...S...*..',
+            '...*S..*..',
+            '...*.S.*..',
+            '...*..S*..',
+            '...*...S..',
+        ]
+    );
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+
+// 'S..|...|..', // estado inicial
+// '.S.|...|..', // avanza el trineo la carretera
+// '..S|...|..', // avanza el trineo la carretera
+// '..S|...|..', // el trineo para en la barrera
+// '..S|...|..', // el trineo para en la barrera
+// '...S...*..', // se abre la barrera, el trineo avanza
+// '...*S..*..', // avanza el trineo la carretera
+// '...*.S.*..', // avanza el trineo la carretera
+// '...*..S*..', // avanza el trineo la carretera
+// '...*...S..', // avanza por la barrera abierta

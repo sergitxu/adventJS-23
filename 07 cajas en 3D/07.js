@@ -43,7 +43,22 @@ function drawGift(size, symbol) {
     return result;
 }
 
-console.log(drawGift(4, '+'));
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.strictEqual(drawGift(4, '+'),
+        '   ####\n' +
+        '  #++##\n' +
+        ' #++#+#\n' +
+        '####++#\n' +
+        '#++#+#\n' +
+        '#++##\n' +
+        '####\n');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 /*
    ####
   #++##
@@ -54,7 +69,21 @@ console.log(drawGift(4, '+'));
 ####
 */
 
-console.log(drawGift(5, '*'));
+try {
+    assert.strictEqual(drawGift(5, '*'),
+        '    #####\n' +
+        '   #***##\n' +
+        '  #***#*#\n' +
+        ' #***#**#\n' +
+        '#####***#\n' +
+        '#***#**#\n' +
+        '#***#*#\n' +
+        '#***##\n' +
+        '#####\n');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 /*
     #####
    #***##

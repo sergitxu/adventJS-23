@@ -12,7 +12,14 @@ function manufacture(gifts, materials) {
     });
 }
 
-const gifts = ['tren', 'oso', 'pelota']
-const materials = 'tronesa'
+// TESTS
+const assert = require('assert');
 
-console.log(manufacture(gifts, materials));
+try {
+    assert.deepStrictEqual(manufacture(['tren', 'oso', 'pelota'], 'tronesa'),
+        ['tren', 'oso']
+    );
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

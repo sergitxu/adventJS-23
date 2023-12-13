@@ -20,6 +20,26 @@ function decode(message) {
     return message;
 }
 
-console.log('Expected: hola mundo: ' + decode('hola (odnum)'));
-console.log('Expected: santaclaus: ' + decode('sa(u(cla)atn)s'));
-console.log('Expected: hello world!: ' + decode('(olleh) (dlrow)!'));
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.deepStrictEqual(decode('hola (odnum)'), 'hola mundo');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(decode('sa(u(cla)atn)s'), 'santaclaus');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(decode('(olleh) (dlrow)!'), 'hello world!');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

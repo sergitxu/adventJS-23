@@ -40,6 +40,12 @@ function organizeGifts(gifts) {
     return result;
 }
 
-const result1 = organizeGifts(`76a11b`)
-console.log(`Expected: '[a]{a}{a}(aaaaaa){b}(b)' ${result1}`);
-// '[a]{a}{a}(aaaaaa){b}(b)'
+// TESTS
+const assert = require('assert');
+
+try {
+    assert.strictEqual(organizeGifts('76a11b'), '[a]{a}{a}(aaaaaa){b}(b)');
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}

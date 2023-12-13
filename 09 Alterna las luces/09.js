@@ -37,17 +37,45 @@ function adjustLights(lights) {
 
 }
 
-console.log(`Expected: 1 - returned: ${adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢'])}`);
-// // -> 1 (cambias la cuarta luz a 🔴)
+// TESTS
+const assert = require('assert');
 
-console.log(`Expected: 2 - returned: ${adjustLights(['🔴', '🔴', '🟢', '🟢', '🔴'])}`);
-// -> 2 (cambias la segunda luz a 🟢 y la tercera a 🔴)
+try {
+    assert.strictEqual(adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢']), 1);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+// (cambias la cuarta luz a 🔴)
 
-console.log(`Expected: 0 - returned: ${adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢'])}`);
-// // -> 0 (ya están alternadas)
+try {
+    assert.strictEqual(adjustLights(['🔴', '🔴', '🟢', '🟢', '🔴']), 2);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+// (cambias la segunda luz a 🟢 y la tercera a 🔴)
 
-console.log(`Expected: 1 - returned: ${adjustLights(['🔴', '🔴', '🔴'])}`);
-// // -> 1 (cambias la segunda luz a 🟢)
+try {
+    assert.strictEqual(adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢']), 0);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+// ya estan alternadas
 
-console.log(`Expected: 1 - returned: ${adjustLights(['🟢', '🟢', '🔴', '🟢', '🔴'])}`);
-// // -> 1 (cambias la segunda luz a 🟢)
+try {
+    assert.strictEqual(adjustLights(['🔴', '🔴', '🔴']), 1);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+// (cambias la segunda luz a 🟢)
+
+try {
+    assert.strictEqual(adjustLights(['🟢', '🟢', '🔴', '🟢', '🔴']), 1);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+// (cambias la segunda luz a 🟢)

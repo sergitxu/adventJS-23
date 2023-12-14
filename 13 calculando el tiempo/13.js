@@ -33,8 +33,6 @@ function calculateTime(deliveries) {
     return result;
 }
 
-calculateTime(['01:01:01', '09:59:59', '01:01:01'])
-
 // TESTS
 const assert = require('assert');
 

@@ -9,32 +9,28 @@ function checkIsValidCopy(original, copy) {
     original.split(' ');
     for (let letter of original) {
         const copyLetter = copy[original.indexOf(letter)];
-        // Original upperCase
-        if (letter.match(upperLetters)) {
-            if (copyLetter !== letter.toLowerCase() && !copyLetter.match(otherChars)) {
-                return false;
+        if (copyLetter != letter && copyLetter !== letter.toLowerCase()) {
+            // Original upperCase
+            if (letter.match(upperLetters)) {
+                if (!copyLetter.match(otherChars)) {
+                    return false;
+                }
+                // Original lowerCase
+            } else if (letter.match(lowerLetters)) {
+                if (!copyLetter.match(otherChars)) {
+                    return false;
+                }
+                // Original otherChars
+            } else if (letter.match(otherChars)) {
+                if (letter === ' ' && copyLetter !== ' ') {
+                    return false;
+                }
+                let isValidCharacter = checkSpecialChar(letter, copyLetter);
+                return isValidCharacter;
             }
-            // Original lowerCase
-        } else if (letter.match(lowerLetters)) {
-            if (copyLetter !== letter && !copyLetter.match(otherChars)) {
-                return false;
-            }
-            // Original otherChars
-        } else if (letter.match(otherChars)) {
-            if (letter === ' ' && copyLetter !== ' ') {
-                return false;
-            }
-            return checkSpecialCharacter(letter, copyLetter);
-        } else if (letter !== copyLetter) {
-            return false;
         }
     }
-    /* 
-    Without this function the code still works 
-    because there are no examples with '#+:.' characters 
-    in the original message
-    */
-    function checkSpecialCharacter(original, copy) {
+    function checkSpecialChar(original, copy) {
         let reference = '#+:. ';
         let index = reference.indexOf(original);
         let possibleRef = reference.substring(index, reference.length);
@@ -46,7 +42,10 @@ function checkIsValidCopy(original, copy) {
     }
     return true;
 }
-
+// checkIsValidCopy('Santa Claus', '###:. c:+##')
+// console.log(checkIsValidCopy('Santa Claus', '###:. c:+##') + '\n')
+// checkIsValidCopy('Santa Claus', 's#+:.#c:. s')
+// console.log(checkIsValidCopy('Santa Claus', 's#+:.#c:. s'))
 // TESTS
 const assert = require('assert');
 
@@ -59,6 +58,13 @@ try {
 
 try {
     assert.strictEqual(checkIsValidCopy('3: #egalos', '3+ .+:# #:'), false);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.strictEqual(checkIsValidCopy('s+#:.#c:. s', 's#+:.#c:. s'), false);
     console.log('Test ok.');
 } catch (error) {
     console.error('Failed test:', error);
@@ -105,3 +111,11 @@ try {
 } catch (error) {
     console.error('Failed test:', error);
 }
+
+try {
+    assert.strictEqual(checkIsValidCopy('S#n:a Claus', 'S#+:. c:. s'), true);
+    console.log('Test ok.');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+

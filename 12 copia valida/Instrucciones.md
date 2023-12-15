@@ -1,3 +1,5 @@
+## Reto #12: 📸 ¿Es una copia válida?
+
 En el Polo Norte **todavía usan fotocopiadoras de papel**. Los elfos las usan para copiar las cartas que los niños envían a Santa y así poder enviarlas a todos los departamentos de regalos.
 
 Sin embargo **ya son muy viejas y no funcionan muy bien**. Cada vez que hacen una copia, la calidad de la copia disminuye ligeramente, un fenómeno conocido como pérdida generacional.

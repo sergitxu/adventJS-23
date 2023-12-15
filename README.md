@@ -20,7 +20,7 @@ challenges proposed by @midudev
 | 11 | [Reto #11: 📖 Los elfos estudiosos](https://2022.adventjs.dev/es/challenges/2022/11) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/11%20Los%20elfos%20estudiosos/11.js) | 30 |
 | 12 | [Reto #12: 📸 ¿Es una copia válida? ](https://2022.adventjs.dev/es/challenges/2022/12) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/12%20copia%20valida/12.js) | 80 |
 | 13 | [Reto #13: ⌚️ Calculando el tiempo](https://2022.adventjs.dev/es/challenges/2022/13) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/13%20calculando%20el%20tiempo/13.js) | 120 |
-| 14 | [Reto #14: ](https://2022.adventjs.dev/es/challenges/2022/14) |  | [Mi solución]() |  |
+| 14 | [Reto #14: 🚨 Evita la alarma](https://2022.adventjs.dev/es/challenges/2022/14) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/14%20Evita%20la%20alarma/14.js) | 270 |
 | 15 | [Reto #15: ](https://2022.adventjs.dev/es/challenges/2022/15) |  | [Mi solución]() |  |
 | 16 | [Reto #16: ](https://2022.adventjs.dev/es/challenges/2022/16) |  | [Mi solución]() |  |
 | 17 | [Reto #17: ](https://2022.adventjs.dev/es/challenges/2022/17) |  | [Mi solución]() |  |

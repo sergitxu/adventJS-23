@@ -21,7 +21,7 @@ challenges proposed by @midudev
 | <img src="https://adventjs.dev/challenges-2023/12.png" width="40px">  [Reto #12: 📸 ¿Es una copia válida? ](https://adventjs.dev/es/challenges/2023/12) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/12%20copia%20valida/12.js) | 80 |
 | <img src="https://adventjs.dev/challenges-2023/13.png" width="40px">  [Reto #13: ⌚️ Calculando el tiempo](https://adventjs.dev/es/challenges/2023/13) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/13%20calculando%20el%20tiempo/13.js) | 120 |
 | <img src="https://adventjs.dev/challenges-2023/14.png" width="40px">  [Reto #14: 🚨 Evita la alarma](https://adventjs.dev/es/challenges/2023/14) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/14%20Evita%20la%20alarma/14.js) | 270 |
-| <img src="https://adventjs.dev/challenges-2023/15.png" width="40px">  [Reto #15: ](https://adventjs.dev/es/challenges/2023/15) |  | [Mi solución]() |  |
+| <img src="https://adventjs.dev/challenges-2023/15.png" width="40px">  [Reto #15: ↔️ Robot autónomo](https://adventjs.dev/es/challenges/2023/15) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/15%20Robot%20autonomo/15.js) | 25 |
 | <img src="https://adventjs.dev/challenges-2023/16.png" width="40px">  [Reto #16: ](https://adventjs.dev/es/challenges/2023/16) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/17.png" width="40px">  [Reto #17: ](https://adventjs.dev/es/challenges/2023/17) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/18.png" width="40px">  [Reto #18: ](https://adventjs.dev/es/challenges/2023/18) |  | [Mi solución]() |  |

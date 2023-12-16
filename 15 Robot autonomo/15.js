@@ -10,8 +10,7 @@ function autonomousDrive(store, movements) {
             break;
         }
     }
-    let initial = store[robotRow].substring(0, robotCol);
-    store[robotRow] = initial + '.' + store[robotRow].substring(robotCol + 1);
+    store[robotRow] = store[robotRow].replace("!", ".");
     for(let movement of movements) {
         switch(movement) {
             case 'L': {

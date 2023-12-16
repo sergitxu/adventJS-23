@@ -1,8 +1,6 @@
-
 function autonomousDrive(store, movements) {
     let robotCol = -1;
     let robotRow = -1;
-    let initialPos = [];
     let finalPos = [];
 
     for (let i = 0; i < store.length; i++) {
@@ -12,38 +10,34 @@ function autonomousDrive(store, movements) {
             break;
         }
     }
-    initialPos = [robotRow, robotCol];
+    let initial = store[robotRow].substring(0, robotCol);
+    store[robotRow] = initial + '.' + store[robotRow].substring(robotCol + 1);
     for(let movement of movements) {
         switch(movement) {
             case 'L': {
-            if(store[robotRow][robotCol-1] === '.' || store[robotRow][robotCol-1] === '!') robotCol--;
+            if(store[robotRow][robotCol-1] === '.') robotCol--;
             break;
             }
             case 'R': {
-            if(store[robotRow][robotCol+1] === '.' || store[robotRow][robotCol+1] === '!') robotCol++;
+            if(store[robotRow][robotCol+1] === '.') robotCol++;
             break;
             }
             case 'U':  {
-            if(store[robotRow-1][robotCol] === '.' || store[robotRow-1][robotCol] === '!') robotRow--;
+            if(store[robotRow-1][robotCol] === '.') robotRow--;
             break;
             }
             case 'D': {
               if(robotRow+1 < store.length){
-                if(store[robotRow+1][robotCol] === '.' || store[robotRow+1][robotCol] === '!') robotRow++;
+                if(store[robotRow+1][robotCol] === '.') robotRow++;
               }
             break;
             }
         }
         finalPos = [robotRow,robotCol]
     }
-    if (initialPos === finalPos) {
-        return store;
-    }
-    let initial = store[initialPos[0]].substring(0, initialPos[1]);
-    store[initialPos[0]] = initial + '.' + store[initialPos[0]].substring(initialPos[1] + 1);
     let final1 = store[finalPos[0]].substring(0, finalPos[1]);
-    store[finalPos[0]] = final1 + '!' + store[finalPos[0]].substring(finalPos[1] + 1);
-    
+    let final2 = store[finalPos[0]].substring(finalPos[1] + 1);
+    store[finalPos[0]] = final1 + '!' + final2;
     return store
 }
 

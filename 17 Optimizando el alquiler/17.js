@@ -1,56 +1,72 @@
-function optimizeIntervals(intervals) { 
-    intervals.sort((a,b) => a[0] - b[0]);
-    let intLength = intervals.length;
-    let orderedIntervals = [];
-    if ([intervals[0][0]]) orderedIntervals.push([intervals[0][0]]);
-    // for (let interval of intervals) {
-        let ref = intervals[0][1];
-    // intervals.forEach(interval => {
-        for(let i = 0; i < intLength; i++) {
-        console.log('intervals: ' + intervals);
-        console.log('i: ' + i);
-        console.log('ref: ' + ref);
-        console.log('intervals[0][1]: ' + intervals[0][1]);
-        if (intervals[0][0] <= ref ) {
-            if (intervals[0][1] >= ref) orderedIntervals[0][1] = intervals[0][1];
-            console.log('MENOR QUE LA REF intervals: ' + intervals);            
+function optimizeIntervals(intervals) {
+    intervals.sort((a, b) => a[0] - b[0]);
+
+    let mergedIntervals = [];
+    let currentInterval = intervals[0];
+
+    for (let i = 1; i < intervals.length; i++) {
+        let nextInterval = intervals[i];
+
+        if (currentInterval[1] >= nextInterval[0]) {
+            currentInterval[1] = Math.max(currentInterval[1], nextInterval[1]);
         } else {
-            console.log('Mayor que la ref intervals: ' + intervals);
-            orderedIntervals.push(intervals[0]);
-            ref = intervals[0][1];
+            mergedIntervals.push(currentInterval);
+            currentInterval = nextInterval;
         }
-        intervals.splice(0, 1);
-        console.log('orderedIntervals: ' + orderedIntervals);
+    }
+    mergedIntervals.push(currentInterval);
 
-        // intervals = intervals.filter(interval => interval[0] >= ref);
-        console.log('intervals: ' + intervals);
-        console.log('\n');
-
-    };
-    console.log(orderedIntervals)
-    // return []
+    return mergedIntervals;
 }
 
-optimizeIntervals([[1, 15], [8, 12], [4, 7]])
+// TESTS
+const assert = require('assert');
 
-// [[ 1, 15 ]]
+try {
+    assert.deepStrictEqual(optimizeIntervals([[3, 3], [1, 2], [5, 6]]), [[1, 2], [3, 3], [5, 6]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
+try {
+    assert.deepStrictEqual(optimizeIntervals([[1, 1], [8, 10], [2, 2]]), [[1, 1], [2, 2], [8, 10]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
-optimizeIntervals([
-    [1, 3],
-    [8, 10],
-    [2, 6]
-  ])
-  // [[1, 6], [8, 10]]
+try {
+    assert.deepStrictEqual(optimizeIntervals([[3, 4000], [1, 2], [2, 6000]]), [[1, 6000]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
-  optimizeIntervals([
-    [5, 8],
-    [2, 7],
-    [3, 4]
-  ]) // [[2, 8]]
+try {
+    assert.deepStrictEqual(optimizeIntervals([[3, 4], [1, 2], [5, 6]]), [[1, 2], [3, 4], [5, 6]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
 
-  optimizeIntervals([
-    [3, 4],
-    [1, 2],
-    [5, 6]
-  ]) // [[1, 2], [3, 4], [5, 6]]
+try {
+    assert.deepStrictEqual(optimizeIntervals([[1, 15], [8, 12], [4, 7]]), [[1, 15]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(optimizeIntervals([[1, 3], [8, 10], [2, 6]]), [[1, 6], [8, 10]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}
+
+try {
+    assert.deepStrictEqual(optimizeIntervals([[5, 8], [2, 7], [3, 4]]), [[2, 8]]);
+    console.log('Test ok!');
+} catch (error) {
+    console.error('Failed test:', error);
+}

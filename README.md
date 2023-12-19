@@ -24,7 +24,7 @@ challenges proposed by @midudev
 | <img src="https://adventjs.dev/challenges-2023/15.png" width="40px">  [Reto #15: ↔️ Robot autónomo](https://adventjs.dev/es/challenges/2023/15) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/15%20Robot%20autonomo/15.js) | 120 |
 | <img src="https://adventjs.dev/challenges-2023/16.png" width="40px">  [Reto #16: ❌ Despliegue en viernes](https://adventjs.dev/es/challenges/2023/16) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/16%20Despliegue%20en%20Viernes/16.js) | 100 |
 | <img src="https://adventjs.dev/challenges-2023/17.png" width="40px">  [Reto #17: 🛷 Optimizando el alquiler](https://adventjs.dev/es/challenges/2023/17) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/17%20Optimizando%20el%20alquiler/17.js) | 140 |
-| <img src="https://adventjs.dev/challenges-2023/18.png" width="40px">  [Reto #18: ](https://adventjs.dev/es/challenges/2023/18) |  | [Mi solución]() |  |
+| <img src="https://adventjs.dev/challenges-2023/18.png" width="40px">  [Reto #18: 🔢 El reloj digital](https://adventjs.dev/es/challenges/2023/18) | 🔴 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/18%20Reloj%20digital/18.js) | 25 |
 | <img src="https://adventjs.dev/challenges-2023/19.png" width="40px">  [Reto #19: ](https://adventjs.dev/es/challenges/2023/19) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/20.png" width="40px">  [Reto #20: ](https://adventjs.dev/es/challenges/2023/20) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/21.png" width="40px">  [Reto #21: ](https://adventjs.dev/es/challenges/2023/21) |  | [Mi solución]() |  |

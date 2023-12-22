@@ -33,3 +33,4 @@ challenges proposed by @midudev
 | <img src="https://adventjs.dev/challenges-2023/22.png" width="40px">  [Reto #22: ](https://adventjs.dev/es/challenges/2023/22) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/23.png" width="40px">  [Reto #23: ](https://adventjs.dev/es/challenges/2023/23) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/24.png" width="40px">  [Reto #24: ](https://adventjs.dev/es/challenges/2023/24) |  | [Mi solución]() |  |
+| <img src="https://adventjs.dev/challenges-2023/25.png" width="40px">  [Reto #25: ](https://adventjs.dev/es/challenges/2023/24) |  | [Mi solución]() |  |

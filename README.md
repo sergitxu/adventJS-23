@@ -28,8 +28,8 @@ challenges proposed by @midudev
 | <img src="https://adventjs.dev/challenges-2023/17.png" width="40px">  [Reto #17: 🛷 Optimizando el alquiler](https://adventjs.dev/es/challenges/2023/17) | 🟢 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/17%20Optimizando%20el%20alquiler/17.js) | 140 |
 | <img src="https://adventjs.dev/challenges-2023/18.png" width="40px">  [Reto #18: 🔢 El reloj digital](https://adventjs.dev/es/challenges/2023/18) | 🔴 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/18%20Reloj%20digital/18.js) | 25 |
 | <img src="https://adventjs.dev/challenges-2023/19.png" width="40px">  [Reto #19: ](https://adventjs.dev/es/challenges/2023/19) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/19%20Enfrenta%20el%20sabotaje/19.js) | 25 |
-| <img src="https://adventjs.dev/challenges-2023/20.png" width="40px">  [Reto #20: ](https://adventjs.dev/es/challenges/2023/20) |  | [Mi solución]() |  |
-| <img src="https://adventjs.dev/challenges-2023/21.png" width="40px">  [Reto #21: ](https://adventjs.dev/es/challenges/2023/21) |  | [Mi solución]() |  |
+| <img src="https://adventjs.dev/challenges-2023/20.png" width="40px">  [Reto #20: 🏋️‍♂️ Distribuye el peso](https://adventjs.dev/es/challenges/2023/20) | 🔴 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/20%20Distribuye%20el%20peso/20.js) | 25 |
+| <img src="https://adventjs.dev/challenges-2023/21.png" width="40px">  [Reto #21: 🪐 Mensaje binario](https://adventjs.dev/es/challenges/2023/21) | 🟡 | [Mi solución](https://github.com/sergitxu/adventJS-23/blob/main/21%20mensaje%20binario/21.js) | 200 |
 | <img src="https://adventjs.dev/challenges-2023/22.png" width="40px">  [Reto #22: ](https://adventjs.dev/es/challenges/2023/22) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/23.png" width="40px">  [Reto #23: ](https://adventjs.dev/es/challenges/2023/23) |  | [Mi solución]() |  |
 | <img src="https://adventjs.dev/challenges-2023/24.png" width="40px">  [Reto #24: ](https://adventjs.dev/es/challenges/2023/24) |  | [Mi solución]() |  |

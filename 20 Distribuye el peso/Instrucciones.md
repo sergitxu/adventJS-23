@@ -1,3 +1,5 @@
+## Reto #20: 🏋️‍♂️ Distribuye el peso
+
 ¡Tenemos problemas con la carga de los juguetes en el trineo 🛷 de Santa 🎅! Parece que la distribución de los juguetes no es la adecuada y **el trineo no puede despegar**. ¿Podrías ayudarnos a resolver este problema?
 
 Para solucionarlo hemos decidido utilizar un método similar al de un filtro de imágenes. En cada posición, vamos a **distribuir la carga de los juguetes en función del número de juguetes de las posiciones vecinas**.

@@ -1,3 +1,5 @@
+## Reto #23: 🍽️ La comida de Navidad
+
 ¡Santa 🎅 está organizando una gran cena navideña 🫓 y quiere asegurarse de que todos los platos sean **únicos y variados**!
 
 Te da una lista de platos navideños donde cada elemento consiste en una lista de strings que comienza con el nombre del plato, seguido de todos los ingredientes utilizados para su preparación.
